@@ -1,0 +1,45 @@
+*{
+    transition: .3s;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    background-image: linear-gradient(to bottom right, darkblue, aqua);
+}
+
+.half-width{
+    width: 50%;
+    color: white;
+}
+
+weeb-list{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+    align-content: flex-start;
+    margin: 20px;
+}
+
+@media screen and (max-width: 800px){
+    header{
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .half-width{
+        width: 100%;
+        text-align: center;
+    }
+
+    /* weeb-item{
+        width: 100%;
+        margin: 10px;
+    } */
+}
